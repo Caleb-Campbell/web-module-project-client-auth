@@ -1,38 +1,100 @@
-.App {
+body {
   text-align: center;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 5px black;
+  padding-bottom: 5vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+a {
+font-size: 2vw;
+color: white;
+background-color: black;
+padding-inline: 1vw;
+padding-top: 2.5vw;
+padding-bottom: 2.5vw;
+cursor: pointer;
+text-decoration: none;
+}
+
+h2 {
+  display: inline;
+  padding-inline: 2vw;
+  font-size: 2vw;
+}
+
+/* Form */
+
+h3 {
+  font-size: 6em;
+  font-weight: bolder;
+}
+
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.formWrap {
+height: 100vh;
+}
+label {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding: .5em;
+}
+
+input {
+  width: 20vw;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  font-size: 2vw;
+}
+
+.submit {
+width: 20vw;
+height: 7vh;
+border: none;
+background-color: black;
+color: white;
+font-weight: bold;
+font-size: 2em;
+cursor: pointer;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* friendlist */
+.friend{
+  display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+  font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ /* logout */
+ h5 {
+  font-size: 2em;
+ }
